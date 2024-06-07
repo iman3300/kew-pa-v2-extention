@@ -1,0 +1,16 @@
+{
+  "config": {
+    "classmap-authoritative": true
+  },
+  "autoload": {
+    "psr-4": {
+      "OA\\iTop\\Extension\\": "src"
+    }
+  },
+  "name": "oa/kew-pa-extension",
+  "type": "itop-extension",
+  "description": "Kew-Pa",
+  "require": {
+    "composer-runtime-api": "^2.0"
+  }
+}
