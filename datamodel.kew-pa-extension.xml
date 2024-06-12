@@ -3,7 +3,7 @@
   <classes>
     <!-- Define the new class Asset -->
     <class id="Asset" _delta="define">
-      <parent>Asset</parent>
+      <parent>Server</parent>
       <properties>
         <category>bizmodel,searchable</category>
         <abstract>false</abstract>
