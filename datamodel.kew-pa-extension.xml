@@ -28,7 +28,6 @@
         </reconciliation>
       </properties>
       <fields>
-
         <field id="asset_tag" xsi:type="AttributeString">
           <sql>asset_tag</sql>
           <default_value/>
@@ -47,15 +46,18 @@
           <is_null_allowed>true</is_null_allowed>
           <tracking_level>none</tracking_level>
         </field>
-
-
         <field id="ip_address" xsi:type="AttributeIPAddress">
           <sql>ip_address</sql>
           <default_value/>
           <is_null_allowed>true</is_null_allowed>
           <tracking_level>none</tracking_level>
         </field>
-       
+        <field id="url" xsi:type="AttributeURLExtended">
+          <sql>url</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+          <tracking_level>none</tracking_level>
+        </field>
       </fields>
       <methods/>
       <presentation>
@@ -64,106 +66,105 @@
             <item id="col:col1">
               <items>
                 <item id="name">
-  <rank>10</rank>
-</item>
-<item id="org_id">
-  <rank>20</rank>
-</item>
-<item id="status">
-  <rank>30</rank>
-</item>
-
-<item id="asset_tag">
-  <rank>60</rank>
-</item>
-<item id="serial">
-  <rank>70</rank>
-</item>
-<item id="model">
-  <rank>80</rank>
-</item>
-<item id="ip_address">
-  <rank>440</rank>
-</item>
-
-
+                  <rank>10</rank>
+                </item>
+                <item id="org_id">
+                  <rank>20</rank>
+                </item>
+                <item id="status">
+                  <rank>30</rank>
+                </item>
+                <item id="asset_tag">
+                  <rank>60</rank>
+                </item>
+                <item id="serial">
+                  <rank>70</rank>
+                </item>
+                <item id="model">
+                  <rank>80</rank>
+                </item>
+                <item id="ip_address">
+                  <rank>440</rank>
+                </item>
+                <item id="url">
+                  <rank>450</rank>
+                </item>
               </items>
             </item>
           </items>
         </details>
         <search>
           <items>
-
-<item id="org_id">
-  <rank>20</rank>
-</item>
-<item id="status">
-  <rank>30</rank>
-</item>
-
-<item id="asset_tag">
-  <rank>60</rank>
-</item>
-<item id="serial">
-  <rank>70</rank>
-</item>
-<item id="model">
-  <rank>80</rank>
-</item>
-<item id="ip_address">
-  <rank>440</rank>
-</item>
-
+            <item id="org_id">
+              <rank>20</rank>
+            </item>
+            <item id="status">
+              <rank>30</rank>
+            </item>
+            <item id="asset_tag">
+              <rank>60</rank>
+            </item>
+            <item id="serial">
+              <rank>70</rank>
+            </item>
+            <item id="model">
+              <rank>80</rank>
+            </item>
+            <item id="ip_address">
+              <rank>440</rank>
+            </item>
+            <item id="url">
+              <rank>450</rank>
+            </item>
           </items>
         </search>
         <list>
           <items>
- <items>
-                <item id="name">
-  <rank>10</rank>
-</item>
-<item id="org_id">
-  <rank>20</rank>
-</item>
-<item id="status">
-  <rank>30</rank>
-</item>
-
-<item id="asset_tag">
-  <rank>60</rank>
-</item>
-<item id="serial">
-  <rank>70</rank>
-</item>
-<item id="model">
-  <rank>80</rank>
-</item>
-<item id="ip_address">
-  <rank>440</rank>
-</item>
-
-
+            <item id="name">
+              <rank>10</rank>
+            </item>
+            <item id="org_id">
+              <rank>20</rank>
+            </item>
+            <item id="status">
+              <rank>30</rank>
+            </item>
+            <item id="asset_tag">
+              <rank>60</rank>
+            </item>
+            <item id="serial">
+              <rank>70</rank>
+            </item>
+            <item id="model">
+              <rank>80</rank>
+            </item>
+            <item id="ip_address">
+              <rank>440</rank>
+            </item>
+            <item id="url">
+              <rank>450</rank>
+            </item>
           </items>
         </list>
-</presentation>
-  </class>
-    </classes>
-    <!--  Adds a button to the Config Management Overview  -->
-    <menus>
+      </presentation>
+    </class>
+  </classes>
+  <!-- Adds a button to the Config Management Overview -->
+  <menus>
     <menu id="ConfigManagementOverview" xsi:type="DashboardMenuNode" _delta="must_exist">
       <definition>
         <cells>
-        <cell id="3" _delta="must_exist">
-          <dashlets>
-            <dashlet id="102" xsi:type="DashletBadge" _delta="define">
-              <rank>8</rank>
+          <cell id="3" _delta="must_exist">
+            <dashlets>
+              <dashlet id="102" xsi:type="DashletBadge" _delta="define">
+                <rank>8</rank>
                 <class>Asset</class>
-            </dashlet>
+              </dashlet>
             </dashlets>
-        </cell>
+          </cell>
         </cells>
       </definition>
     </menu>
-    </menus>
-  <profiles> </profiles>
+  </menus>
+  <profiles></profiles>
 </itop_design>
